@@ -1,0 +1,78 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">Lifeline Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        
+
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/docdash">Doctor Dashboard</a>
+          </li>
+      
+
+        
+        
+      </ul>
+
+      <div class="mx-2">
+        
+        <button style="margin: 5px;"class="btn btn-danger" data-toggle="modal" data-target="#loginModal"><a style="color:white;" href="javascript:void(0);" routerLink="/home">Logout</a></button>
+        
+    </div>
+      
+    </div>
+  
+  </nav>
+  
+  <div class="container">
+  <hr>
+    <h2 style="text-align: center;margin-top: 20PX;">Patient Details</h2>
+    <a style="color: rgb(86, 86, 86); font-size: x-large;"><marquee behavior="scroll" direction="left">
+      Welcome to pateint details. Please find the patient details below!!. Click to doctor dashboard to view Doctor dashboard</marquee></a>
+  <hr>
+  <!-- <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search" (input)="searchPatients()"> 
+  <br>
+    <a style="color: rgb(86, 86, 86); font-size: xx-large;">Current Patient List in the Queue</a>
+<div class="tableFixHead">
+  <br> -->
+
+
+
+
+<div class="container mt-4 d-flex justify-content-center">
+    <div class="card shadow" style="max-width: 400px; width: 100%;">
+        <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0 text-center">Patient Details</h5>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-5 font-weight-bold">ID:</div>
+                <div class="col-7"><b>{{patient.id}}</b></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5 font-weight-bold">Name:</div>
+                <div class="col-7"><b>{{patient.name}}</b></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5 font-weight-bold">Age:</div>
+                <div class="col-7"><b>{{patient.age}}</b></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5 font-weight-bold">Blood Group:</div>
+                <div class="col-7"><b>{{patient.blood}}</b></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5 font-weight-bold">Dose:</div>
+                <div class="col-7"><b>{{patient.dose}}</b></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-5 font-weight-bold">Fees:</div>
+                <div class="col-7"><b>{{patient.fees}}</b></div>
+            </div>
+        </div>
+    </div>
+</div>

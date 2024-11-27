@@ -1,0 +1,123 @@
+<!-- nav bar  -->
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">Lifeline Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        
+
+      
+        <li class="nav-item">
+            <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/docdash">Doctor Dashboard</a>
+          </li>
+
+        
+        
+      </ul>
+
+      <div class="mx-2">
+        
+        <button style="margin: 5px;"class="btn btn-danger" data-toggle="modal" data-target="#loginModal"><a style="color:white;" href="javascript:void(0);" routerLink="/home">Logout</a></button>
+        
+    </div>
+      
+    </div>
+  
+  </nav>
+  
+ 
+
+
+<!-- form -->
+<form class="container" (ngSubmit)="onSubmit()">
+    <h2 class="text-center">Add New Appointment</h2>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter name"
+            [(ngModel)]="patient.name"
+            required
+            class="form-control"
+        />
+    </div>
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Enter age"
+            [(ngModel)]="patient.age"
+            required
+            class="form-control"
+        />
+    </div>
+    <div class="form-group">
+        <label for="dose">Dose</label>
+        <input
+            type="text"
+            id="dose"
+            name="dose"
+            placeholder="Enter dose"
+            [(ngModel)]="patient.dose"
+            required
+            class="form-control"
+        />
+    </div>
+    <div class="form-group">
+        <label for="prescription">Prescription</label>
+        <input
+            type="text"
+            id="prescription"
+            name="prescription"
+            placeholder="Enter prescription"
+            [(ngModel)]="patient.prescription"
+            required
+            class="form-control"
+        />
+    </div>
+    <div class="form-group">
+        <label for="blood">Blood Type</label>
+        <input
+            type="text"
+            id="blood"
+            name="blood"
+            placeholder="Enter blood type"
+            [(ngModel)]="patient.blood"
+            required
+            class="form-control"
+        />
+    </div>
+        <div class="form-group">
+            <label for="fees">Fees</label>
+            <input
+                type="text"
+                id="fees"
+                name="fees"
+                placeholder="Enter fees"
+                [(ngModel)]="patient.fees"
+                required
+                class="form-control"
+            />
+        </div>
+    <div class="form-group">
+        <label for="urgency">Urgency</label>
+        <input
+            type="text"
+            id="urgency"
+            name="urgency"
+            placeholder="Enter your urgency"
+            [(ngModel)]="patient.urgency"
+            required
+            class="form-control"
+        />
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
